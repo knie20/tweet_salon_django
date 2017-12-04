@@ -1,0 +1,17 @@
+.form-main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    color: #0084b4;
+}
+
+p {
+    color: #00aced;
+}
+
+.handle-prefix {
+    font-size: 20px;
+    text-align: right;
+}

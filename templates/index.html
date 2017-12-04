@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% include 'partials/imports.html' %}
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Tweet Salon</h1>
+            <p>Enter a Handle to Begin</p>
+        </div>
+    </div>
+
+    <form class="form-main" method="post" action="/user/">
+        <div class="row">
+            <div class="col-1 offset-2 handle-prefix">
+                <label for="handleInput">@</label>
+            </div>
+            <div class="col-5">
+                {{ form }}
+            </div>
+            <div class="col-2">
+                <input type="submit" value="Go"></input>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
