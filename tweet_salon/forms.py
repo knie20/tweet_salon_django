@@ -2,4 +2,4 @@ from django import forms
 
 
 class MainForm(forms.Form):
-    handle = forms.CharField(label='handle', max_length=15)
+    handle = forms.CharField(max_length=15)

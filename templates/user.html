@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User - </title>
+    <title>User - @{{ twitter_user.handle }}</title>
     {% include 'partials/imports.html' %}
 </head>
 <body>
-{{ user }}
+    <h1>{{ twitter_user.displayName }}</h1>
+    <h4>@{{ twitter_user.handle }}</h4>
+    <table class="tweet-table table-striped">
+        <thead>
+            <tr>
+                <th>Created At</th>
+                <th>Text</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tweet in user_timeline %}
+                <tr>
+                    <td class="cell-created-at">{{ tweet.createdAt }}</td>
+                    <td class="cell-tweet-text">{{ tweet.text }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>

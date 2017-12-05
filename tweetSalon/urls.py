@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from tweet_salon.views import index, go_to_user
+from tweet_salon.views import index, go_to_user, user
 
 
 app_name = 'tweet_salon'
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', index, name='index'),
-    url(r'^user/.*/', go_to_user, name='user')
+    url(r'^submit_handle/$', go_to_user, name='submit_handle'),
+    url(r'^user/.*?', user, name='user')
 ]
