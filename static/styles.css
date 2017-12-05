@@ -25,3 +25,7 @@ p {
 .cell-tweet-text {
     border-left: 5px solid #0084b4;
 }
+
+.errorlist {
+    display: none;
+}

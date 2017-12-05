@@ -15,10 +15,7 @@
 
     <form class="form-main" method="post" action="/submit_handle/"> {% csrf_token %}
         <div class="row">
-            <div class="col-1 offset-2 handle-prefix">
-                <label for="handleInput">@</label>
-            </div>
-            <div class="col-5">
+            <div class="col-3 offset-4">
                 {{ form }}
             </div>
             <div class="col-2">

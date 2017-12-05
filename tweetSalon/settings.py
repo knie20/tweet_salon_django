@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'tweetSalon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tweetsalon_django',
+        'NAME': 'tweet_salon_django',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': 'localhost',

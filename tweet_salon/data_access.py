@@ -18,7 +18,7 @@ def fetch_tweet_by_id(tweetId):
 
 
 def filter_tweets(user_id):
-    return Tweet.objects.filter(user_id__exact=user_id)
+    return Tweet.objects.filter(userId__exact=user_id)
 
 
 def update_tweet(tweet_id, **kwargs):
